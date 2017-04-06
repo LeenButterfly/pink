@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Vidaloka");
+@import url("https://fonts.googleapis.com/css?family=Ultra");
+.featured-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+#sidebar1 .sidebar {
+  border-style: groove;
+  border-color: #ffe6f3;
+  background-color: #ffe6f3;
+  padding: 0.5em, 1em;
+  margin-top: 20px; }
+  #sidebar1 .sidebar .widget {
+    border-bottom: solid;
+    border-color: black;
+    padding-bottom: 0.5em; }
+    #sidebar1 .sidebar .widget:last-child {
+      border-bottom: none; }
+    #sidebar1 .sidebar .widget h3 {
+      font-family: "Playfair Display", serif;
+      color: #ff66b5; }
+    #sidebar1 .sidebar .widget input#s {
+      width: 100%; }
+    #sidebar1 .sidebar .widget ul {
+      list-style-type: none; }
+      #sidebar1 .sidebar .widget ul a {
+        font-family: "Playfair Display", serif;
+        color: #ffe6f3;
+        color: #ff66b5;
+        font-style: none;
+        font-size: 15px; }
+        #sidebar1 .sidebar .widget ul a:hover {
+          color: #990066;
+          text-decoration: none; }
+
+ul {
+  -webkit-padding-start: 10px; }
+
+.navbar {
+  font-family: "Ultra", serif;
+  background-color: #ffcce6; }
+
+.site-footer {
+  background-color: #ff66b5;
+  color: #ffe6f3; }
+
+article {
+  margin-top: 20px; }
+  article header .the-title a {
+    font-family: "Vidaloka", serif;
+    color: #ff66b5;
+    font-style: none;
+    font-size: 30px; }
+    article header .the-title a:hover {
+      color: #990066;
+      text-decoration: none; }
+
+a {
+  color: black; }
+  a:hover {
+    color: #990066; }
