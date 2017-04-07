@@ -14,7 +14,7 @@
   </head>
   <body <?php echo body_class(); ?>
 
-    <div class="navbar-wrapper">
+<div class="navbar-wrapper">
 
       <nav class="navbar navbar-toggleable-md">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                 'theme_location'  => 'header-menu',
                 'container'       => 'div',
                 'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'navbarCollapse',
+                'container_id'    => 'navbarNavDropdown',
                 'menu_class'      => 'nav navbar-nav',
                 'fallback_cb'     => '__return_false',
                 'items_wrap'      => '<ul id="%1$s" class="%2$s ml-auto">%3$s</ul>',
@@ -39,3 +39,6 @@
          
         </div>
       </nav>
+    </div>
+  </body>
+      

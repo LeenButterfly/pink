@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-@import url("https://fonts.googleapis.com/css?family=Vidaloka");
 @import url("https://fonts.googleapis.com/css?family=Ultra");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 .featured-image {
   height: 250px;
   background-size: cover;
@@ -8,8 +8,9 @@
   background-repeat: no-repeat; }
 
 #sidebar1 .sidebar {
-  border-style: groove;
-  border-color: #ffe6f3;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #d9d9d9;
   background-color: #ffe6f3;
   padding: 0.5em, 1em;
   margin-top: 20px; }
@@ -40,23 +41,46 @@ ul {
   -webkit-padding-start: 10px; }
 
 .navbar {
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #d9d9d9;
   font-family: "Ultra", serif;
-  background-color: #ffcce6; }
+  background-color: #ffcce6;
+  font-size: 20px; }
+  .navbar .navbar-brand {
+    font-family: "Ultra", serif; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 .site-footer {
   background-color: #ff66b5;
   color: #ffe6f3; }
 
 article {
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding: 2em; }
+  article header h1 {
+    font-family: "Ultra", serif;
+    color: #ff66b5; }
   article header .the-title a {
-    font-family: "Vidaloka", serif;
+    font-family: "Ultra", serif;
     color: #ff66b5;
     font-style: none;
     font-size: 30px; }
     article header .the-title a:hover {
       color: #990066;
       text-decoration: none; }
+  article main p {
+    font-family: "Noto Serif", serif;
+    text-align: justify; }
+    article main p .btn-pink {
+      background-color: #ffe6f3;
+      border-color: #d9d9d9;
+      border-style: solid;
+      margin-top: 1em; }
+      article main p .btn-pink:hover {
+        box-shadow: 9px 6px 22px 1px rgba(0, 0, 0, 0.66); }
 
 a {
   color: black; }

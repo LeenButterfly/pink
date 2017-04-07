@@ -1,5 +1,6 @@
 @import'variables';
 @import'typography';
+
 .featured-image {
 	height: 250px;
 	background-size: cover;
@@ -10,8 +11,9 @@
 #sidebar1{
 	
 	.sidebar{
-		border-style: groove;
-		border-color: $pink;
+		border-style: solid;
+		border-radius: 25px;
+		border-color: $light-grey;
 		background-color:$pink;
 		padding: 0.5em, 1em;
 		margin-top: 20px;
@@ -55,15 +57,22 @@ ul{
 	    -webkit-padding-start: 10px;
 }
 
-.btn-pink{
 
-}
 
 .navbar{
+	border-style: solid;
+	border-radius: 25px;
+	border-color: $light-grey;
 	font-family: $header;
 	background-color:$light-pink;
+	font-size: 20px;
+	.navbar-brand{
+		font-family: $header;
+		
+	}
 }
 
+.navbar-toggler-icon{background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")}
 
 .site-footer{
 	background-color: $dark-pink;
@@ -73,11 +82,18 @@ ul{
 
 article{
 	margin-top: 20px;
+	padding: 2em;
+
 	header{
+		h1{
+			font-family: $header;
+			color: $dark-pink;
+		}
 		.the-title{
+
 			
 			a{
-				font-family: $content;
+				font-family: $header;
 				color: $dark-pink;
 				font-style: none;
 				font-size: 30px;
@@ -85,10 +101,26 @@ article{
 				&:hover{
 					color:$a-font-hover;
 					text-decoration: none;
+
 				}
 
 			}
 
+		}
+	}
+	main{
+		p{
+			font-family: $content;
+			text-align: justify;
+			.btn-pink{
+				background-color: $pink;
+				border-color: $light-grey;
+				border-style: solid;
+				margin-top: 1em;
+				&:hover{
+					box-shadow: 9px 6px 22px 1px rgba(0,0,0,0.66);
+				}
+			}
 		}
 	}
 }
@@ -97,13 +129,6 @@ a{
 	color: black;
 	&:hover{
 		color:$a-font-hover;
-	}
-}
-.dropdown-toggle{
-
-	&:hover{
-
-		
 	}
 }
 
